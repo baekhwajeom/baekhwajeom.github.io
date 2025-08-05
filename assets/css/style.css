@@ -1309,6 +1309,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 48px;
     border-radius: 12px;
     font-size: 18px;
+    flex-shrink: 0;
   }
 
 
@@ -1363,8 +1364,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contacts-list { gap: 20px; }
 
   .contact-info {
-    max-width: calc(100% - 64px);
-    width: calc(100% - 64px);
+    max-width: calc(100%);
+    width: calc(100%);
   }
 
 
@@ -1879,4 +1880,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+  .sidebar {
+  max-width: 320px !important; /* force sidebar to be wider */
+  width: 100% !important;
+  flex-shrink: 0 !important;  /* prevent shrinking */
+}
+
+article.address {
+  min-height: auto !important;
 }
