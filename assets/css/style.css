@@ -1937,3 +1937,8 @@ article.address {
   max-width: 1200px;  /* adjust width here */
 }
 
+.skill-heading {
+  color: white;          /* Pure white text */
+  font-weight: 800;      /* Extra bold */
+}
+
