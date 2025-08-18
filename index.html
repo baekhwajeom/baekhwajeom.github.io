@@ -837,7 +837,7 @@ through iterative adjustments in geometry, wall thickness, and print orientation
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Knee Exo</button>
             </li>
 
             <li class="filter-item">
@@ -869,7 +869,7 @@ through iterative adjustments in geometry, wall thickness, and print orientation
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Knee Exo</button>
               </li>
 
               <li class="select-item">
@@ -886,23 +886,45 @@ through iterative adjustments in geometry, wall thickness, and print orientation
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
 
-                <h3 class="project-title">Finance</h3>
 
-                <p class="project-category">Web development</p>
+            
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="knee exo">
+  <button class="pdf-open" data-pdf="./assets/pdfs/KneeExo.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/KneeExo.jpg" alt="Knee Exoskeleton PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Knee Exoskeleton (PDF)</h3>
+    <p class="project-category">Knee Exo</p>
+  </button>
+</li>
 
-              </a>
-            </li>
+
+
+
+
+
+<li class="project-item active go-webdesign" data-filter-item data-target="#knee-pdf-card">
+  <button type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/KneeExoCover.jpg" alt="Go to Knee Exo tab" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Knee Exoskeleton</h3>
+    <p class="project-category">Research</p>
+  </button>
+</li>
+
+
+
+
 
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
@@ -922,7 +944,7 @@ through iterative adjustments in geometry, wall thickness, and print orientation
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="knee exo">
               <a href="#">
 
                 <figure class="project-img">
@@ -935,7 +957,7 @@ through iterative adjustments in geometry, wall thickness, and print orientation
 
                 <h3 class="project-title">Fundo</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Knee Exo</p>
 
               </a>
             </li>
@@ -958,7 +980,7 @@ through iterative adjustments in geometry, wall thickness, and print orientation
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="knee exo">
               <a href="#">
 
                 <figure class="project-img">
@@ -971,12 +993,12 @@ through iterative adjustments in geometry, wall thickness, and print orientation
 
                 <h3 class="project-title">DSM.</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Knee Exo</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="knee exo">
               <a href="#">
 
                 <figure class="project-img">
@@ -989,7 +1011,7 @@ through iterative adjustments in geometry, wall thickness, and print orientation
 
                 <h3 class="project-title">MetaSpark</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Knee Exo</p>
 
               </a>
             </li>
@@ -1325,6 +1347,33 @@ through iterative adjustments in geometry, wall thickness, and print orientation
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-</body>
 
+
+
+
+
+
+<div id="pdf-modal" class="pdf-modal" hidden>
+  <div class="pdf-overlay" data-close></div>
+  <div class="pdf-dialog">
+    <button class="pdf-close" aria-label="Close" data-close>&times;</button>
+    <iframe id="pdf-frame" title="PDF preview" loading="lazy"></iframe>
+    <div class="pdf-actions">
+      <a id="pdf-open-new" target="_blank" rel="noopener">Open in new tab</a>
+      <a id="pdf-download" download>Download</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>

@@ -1942,3 +1942,90 @@ article.address {
   font-weight: 800;      /* Extra bold */
 }
 
+.pdf-modal[hidden] { display: none; }
+.pdf-modal { position: fixed; inset: 0; z-index: 9999; }
+.pdf-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+.pdf-dialog {
+  position: relative;
+  margin: 2vh auto;     /* smaller margin so it fills more */
+  width: 96vw;          /* almost full browser width */
+  height: 96vh;         /* almost full browser height */
+  background: #111;
+  border-radius: 8px;   /* slimmer rounded corners */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-close {
+  position: absolute; top: 10px; right: 14px; font-size: 28px; background: transparent; color: #fff; border: 0; cursor: pointer;
+}
+#pdf-frame { border: 0; width: 100%; height: 100%; }
+.pdf-actions { position: absolute; bottom: 8px; right: 12px; display: flex; gap: 14px; }
+.pdf-actions a { color: #fff; text-decoration: underline; }
+
+
+
+
+
+
+
+
+
+/* === Extend portfolio card styling to <button> items (Knee Exo etc.) === */
+
+/* Reset buttons to behave like anchors */
+.project-item button.pdf-open,
+.project-item button.go-webdesign {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+/* Image & icon transitions */
+.project-item :is(a, button) .project-img img {
+  transition: transform 0.35s ease, filter 0.35s ease, opacity 0.35s ease;
+  will-change: transform, filter;
+}
+
+.project-item :is(a, button) .project-item-icon-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);   /* centered */
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+/* Hover/focus: zoom image + grayscale, reveal centered icon */
+.project-item :is(a, button):hover .project-img img,
+.project-item :is(a, button):focus-visible .project-img img {
+  transform: scale(1.06);
+  filter: grayscale(1) brightness(0.8);
+}
+
+.project-item :is(a, button):hover .project-item-icon-box,
+.project-item :is(a, button):focus-visible .project-item-icon-box {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);   /* stay centered */
+}
+
+/* Ensure container provides positioning context */
+.project-item :is(a, button) .project-img {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional: keyboard accessibility outline */
+.project-item :is(a, button):focus-visible {
+  outline: 2px solid rgba(255,255,255,0.6);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
