@@ -75,30 +75,38 @@ for (let i = 0; i < selectItems.length; i++) {
   });
 }
 
-// filter variables
+
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
     const item = filterItems[i];
-    const category = item.dataset.category;
+    const category = (item.dataset.category || '').toLowerCase();
 
     if (selectedValue === "all") {
       // Show everything EXCEPT items marked with .exclude-all
       if (!item.classList.contains("exclude-all")) {
+        if (item.classList.contains("active")) {
+          item.classList.remove("active");
+          void item.offsetWidth; // force reflow so animation restarts
+        }
         item.classList.add("active");
       } else {
         item.classList.remove("active");
       }
-    } else if (selectedValue === (category || '').toLowerCase()) {
-
+    } else if (selectedValue === category) {
+      if (item.classList.contains("active")) {
+        item.classList.remove("active");
+        void item.offsetWidth; // force reflow
+      }
       item.classList.add("active");
     } else {
       item.classList.remove("active");
     }
   }
 };
+
 
 
 
@@ -283,6 +291,55 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 
+
+// --- Video modal (safe version) ---
+(function () {
+  const videoModal = document.getElementById('video-modal');
+  const player = document.getElementById('video-player');
+
+  function openVideo(src, poster) {
+    if (!videoModal || !player) return;
+
+    // set source & optional poster
+    player.src = src || '';
+    if (poster) player.setAttribute('poster', poster);
+
+    // open modal
+    videoModal.hidden = false;
+
+    // attempt to play (OK if autoplay is blocked)
+    player.play().catch(() => {});
+  }
+
+  function closeVideo() {
+    if (!videoModal || !player) return;
+    player.pause();
+    player.removeAttribute('src'); // release on iOS
+    player.load();
+    videoModal.hidden = true;
+  }
+
+  // open from any .video-open button
+  document.querySelectorAll('.video-open[data-video]').forEach(btn => {
+    btn.addEventListener('click', () => openVideo(btn.dataset.video, btn.dataset.poster));
+  });
+
+  // close on overlay or X button
+  videoModal?.addEventListener('click', (e) => {
+    if (e.target.matches('[data-close], .pdf-overlay')) closeVideo();
+  });
+
+  // close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (!videoModal?.hidden && e.key === 'Escape') closeVideo();
+  });
+})();
+
+
+
+
+
+
 /* --- Switch to "Knee Exo" and scroll to the card (no auto-open) --- */
 (function () {
   const selectValueEl = document.querySelector("[data-selecct-value]");
@@ -312,22 +369,58 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   }
 
-  document.addEventListener("click", (e) => {
-    const go = e.target.closest(".go-webdesign"); // your launcher button
-    if (!go) return;
+ // Unified launcher for tab jump cards
+document.addEventListener("click", (e) => {
+  const go = e.target.closest(".go-tab, .go-webdesign");
+  if (!go) return;
 
-    e.preventDefault();
+  e.preventDefault();
 
-    // 1) Switch to the Knee Exo tab
-    switchTo("Knee Exo");
+  // Determine which tab to open
+  const tabName =
+    go.dataset.go ||                       // e.g. data-go="ADA" on your Automatic Door Opener card
+    (go.classList.contains("go-webdesign") ? "Knee Exo" : "all");
 
-    // 2) Scroll to the PDF card (no auto-open)
-    const targetSel = go.getAttribute("data-target") || "#knee-pdf-card";
+  switchTo(tabName);
+
+  // Optional scroll target
+  const targetSel =
+    go.dataset.target ||                   // e.g. data-target="#ada-anchor"
+    (go.classList.contains("go-webdesign") ? "#knee-pdf-card" : null);
+
+  if (targetSel) {
     const card = document.querySelector(targetSel);
     if (card) {
       card.scrollIntoView({ behavior: "smooth", block: "center" });
       card.classList.add("glow");
       setTimeout(() => card.classList.remove("glow"), 1200);
     }
+  }
+});
+
+})();
+
+
+
+
+// Hide "exclude-all" items when the All tab is selected
+(function () {
+  // try to find the All filter button in a few common ways
+  const allBtn =
+    document.querySelector('[data-filter-btn="all"]') ||
+    document.querySelector('[data-filter="all"]') ||
+    Array.from(document.querySelectorAll('[data-filter-btn],[data-filter]'))
+      .find(b => (b.dataset.filterBtn || b.dataset.filter || b.textContent || '')
+        .trim().toLowerCase() === 'all');
+
+  if (!allBtn) return;
+
+  allBtn.addEventListener('click', () => {
+    // your template shows everything on All; remove 'active' from the ones we want to hide
+    document.querySelectorAll('.project-item.exclude-all').forEach(el => {
+      el.classList.remove('active');
+    });
   });
 })();
+
+

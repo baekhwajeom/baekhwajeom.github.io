@@ -2029,3 +2029,46 @@ article.address {
   outline-offset: 3px;
   border-radius: 12px;
 }
+
+
+
+
+
+
+
+
+/* Hide action bar (not needed) */
+#video-modal .pdf-actions { display: none !important; }
+
+/* Center modal only when visible */
+#video-modal:not([hidden]) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dialog container */
+#video-modal .pdf-dialog {
+  background: transparent;   /* no grey card */
+  padding: 0;
+  margin: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Video player */
+#video-modal .modal-video {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;  /* show full video, letterbox if needed */
+  background: #000;
+  display: block;
+  margin: 0;
+}
+
