@@ -720,7 +720,7 @@ for assembly and testing
   </div>
   <p class="timeline-text">
   •	Used hand calculations and CAD modeling to inverse-design a lightweight bicycle crank (5.2 g) intended to fail at a 
-  specified 12 N pedal load with a factor of safety near 1.0, prioritizing failure at least 1 cm from interface components
+  specified 40 N pedal load with a factor of safety near 1.0, prioritizing failure at least 1 cm from interface components
 <br>
 •	Progressed through three major design iterations — rectangular beam, hollow cylinder, and dog-bone geometry — each incorporating 
 significant geometry changes based on bending/torsional stress analysis and testing feedback
@@ -790,11 +790,15 @@ through iterative adjustments in geometry, wall thickness, and print orientation
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>ADA</button>
+              <button data-filter-btn>Door Opener</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Golf Sim</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Bike Crank</button>
             </li>
 
           </ul>
@@ -822,11 +826,15 @@ through iterative adjustments in geometry, wall thickness, and print orientation
               </li>
 
               <li class="select-item">
-                <button data-select-item>ADA</button>
+                <button data-select-item>Door Opener</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Golf sim</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Bike Crank</button>
               </li>
 
             </ul>
@@ -849,7 +857,7 @@ through iterative adjustments in geometry, wall thickness, and print orientation
       <img src="./assets/images/KneeExo.jpg" alt="Knee Exoskeleton PDF" loading="lazy">
     </figure>
     <h3 class="project-title">Knee Exoskeleton (PDF)</h3>
-    <p class="project-category">Knee Exo</p>
+    <p class="project-category">Research</p>
   </button>
 </li>
 
@@ -874,17 +882,17 @@ through iterative adjustments in geometry, wall thickness, and print orientation
 
 
 <li class="project-item active go-tab" data-filter-item
-    data-go="ADA" data-target="#ada-anchor">
+    data-go="door opener" data-target="#ada-anchor">
 
   <button type="button" style="all: unset; cursor: pointer; display: block;">
     <figure class="project-img">
       <div class="project-item-icon-box">
         <ion-icon name="eye-outline"></ion-icon>
       </div>
-      <img src="./assets/images/project-2.png" alt="Automatic Door Opener" loading="lazy">
+      <img src="./assets/images/ADACover.jpeg" alt="Automatic Door Opener" loading="lazy">
     </figure>
-    <h3 class="project-title">Automatic Door Opener</h3>
-    <p class="project-category">ADA</p>
+    <h3 class="project-title">Automated Door Opener</h3>
+    <p class="project-category">Project</p>
   </button>
 </li>
 
@@ -905,7 +913,7 @@ through iterative adjustments in geometry, wall thickness, and print orientation
       <img src="./assets/images/KneeDemoCover.jpg" alt="Knee Exo video demo" loading="lazy">
     </figure>
     <h3 class="project-title">Ver 1.1 — Video Demo (no actuation)</h3>
-    <p class="project-category">Knee Exo</p>
+    <p class="project-category">Research</p>
   </button>
 </li>
 
@@ -923,66 +931,210 @@ through iterative adjustments in geometry, wall thickness, and print orientation
       <img src="./assets/images/TBD" alt="Knee Exo video demo" loading="lazy">
     </figure> 
     <h3 class="project-title">Latest Ver — Video Demo (actuation) [TO BE FINISHED/UPLOADED]</h3>
-    <p class="project-category">Knee Exo</p>
+    <p class="project-category">Research</p>
   </button>
 </li>
 
 
 
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="door opener">
+  <button class="pdf-open" data-pdf="./assets/pdfs/ADADoorOpener.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ADADoorOpener.jpg" alt="Knee Exoskeleton PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Automated Door Opener (PDF)</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
+<li class="project-item exclude-all" data-filter-item data-category="door opener">
 
-                <h3 class="project-title">Summary</h3>
+  <button class="video-open"
+          data-video="./assets/images/ADADemo.mp4"
+          data-poster="./assets/images/knee-demo-poster.jpg"
+          type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-circle-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ADADemoCover.jpg" alt="Automatic Door Opener video demo" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Automated Door Opener - Video Demo </h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
 
-                <p class="project-category">Web development</p>
 
-              </a>
-            </li>
 
-            <li class="project-item" data-filter-item data-category="ada">
-              <a href="#">
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="door opener">
+  <button class="pdf-open" data-pdf="./assets/pdfs/ADAReport.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ADAReport.jpg" alt="Door Opener Final Report" loading="lazy">
+    </figure>
+    <h3 class="project-title">Design Report</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
 
-                <h3 class="project-title">Task Manager</h3>
 
-                <p class="project-category">ADA</p>
 
-              </a>
-            </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="door opener">
+  <button class="pdf-open" data-pdf="./assets/pdfs/ADAPresentation.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ADAPresCover.jpg" alt="ADA Presentation PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Design Presentation</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
 
-                <h3 class="project-title">Arrival</h3>
 
-                <p class="project-category">Web development</p>
 
-              </a>
-            </li>
+ <li class="project-item active go-tab" data-filter-item data-go="Golf Sim" data-target="#golf-anchor">
+  <button type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>  
+      </div>
+      <img src="./assets/images/GolfSimCover.jpg" alt="Go to Golf Sim tab" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Golf Simulator</h3>
+    <p class="project-category">Research</p>
+  </button> 
+</li>
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="golf sim">
+  <button class="pdf-open" data-pdf="./assets/pdfs/GolfSim.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/GolfSim.jpg" alt="Golf Sim PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Golf Simulator (PDF)</h3>
+    <p class="project-category">Research</p>
+  </button>
+</li>
+
+
+
+<li class="project-item exclude-all" data-filter-item data-category="golf sim">
+
+  <button class="video-open"
+          data-video="./assets/images/GolfSimDemo.mp4"
+          data-poster="./assets/images/rdghgfjn"
+          type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-circle-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/GolfSimDemoCover.jpeg" alt="Automatic Door Opener video demo" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Golf Simulator - Video Demo </h3>
+    <p class="project-category">Research</p>
+  </button>
+</li> 
+
+
+
+
+
+<li class="project-item exclude-all" data-filter-item data-category="golf sim">
+
+  <button class="video-open"
+          data-video="./assets/images/GolfTeeDemo.mp4"
+          data-poster="./assets/images/rdghgfjn"
+          type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-circle-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/GolfTeeDemoCover.jpeg" alt="Automatic Door Opener video demo" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Golf Tee - Video Demo </h3>
+    <p class="project-category">Research</p>
+  </button>
+</li> 
+
+
+
+
+
+<li class="project-item active go-tab" data-filter-item data-go="bike crank" data-target="#bike-anchor">
+  <button type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>  
+      </div>
+      <img src="./assets/images/BikeCrankCover.jpg" alt="Go to Golf Sim tab" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Bicycle Crank</h3>
+    <p class="project-category">Project</p>
+  </button> 
+</li>
+
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="bike crank">
+  <button class="pdf-open" data-pdf="./assets/pdfs/BicycleCrank.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/BikeCrank.jpg" alt="Golf Sim PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Bicycle Crank (PDF)</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="bike crank">
+  <button class="pdf-open" data-pdf="./assets/pdfs/BikeCrankReport.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/BikeCrankReportCover.jpg" alt="Bike Crank Report" loading="lazy">
+    </figure>
+    <h3 class="project-title">Design Report</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="bike crank">
+  <button class="pdf-open" data-pdf="./assets/pdfs/BikeCrankPresentation.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/BikeCrankPresentationCover.jpg" alt="ADA Presentation PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Design Presentation</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+
+
 
           </ul>
 
@@ -1274,8 +1426,6 @@ through iterative adjustments in geometry, wall thickness, and print orientation
     <button class="pdf-close" aria-label="Close" data-pdf-close>&times;</button>
     <iframe id="pdf-frame" title="PDF preview" loading="lazy"></iframe>
     <div class="pdf-actions">
-      <a id="pdf-open-new" target="_blank" rel="noopener">Open in new tab</a>
-      <a id="pdf-download" download>Download</a>
     </div>
   </div>
 </div>
