@@ -1388,7 +1388,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .about .article-title { margin-bottom: 20px; }
 
-  .about-text { margin-bottom: 40px; }
+  .about-text { margin-bottom: 8px; }
 
   /* service */
 
@@ -2072,3 +2072,22 @@ article.address {
   margin: 0;
 }
 
+/* About page photo with text wrap */
+.about-photo {
+  float: right;
+  width: min(360px, 40%);
+  margin: 0 0 12px 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-2);
+  shape-outside: inset(0 round 12px);
+}
+
+/* Stack on small screens — no float */
+@media (max-width: 600px) {
+  .about-photo {
+    float: none;
+    display: block;
+    width: 180px;
+    margin: 0 auto 16px;          /* center above text */
+  }
+}
