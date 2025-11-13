@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Min Seo Kim" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Min Seo Kim">Min Seo Kim          </h1>
+
+          <p class="title">Mechanical Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">minseoki@andrew.cmu.edu</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">January 19, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>San Jose, California, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Hobbies</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Address</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+            <img class="about-photo"
+       src="./assets/images/Me.jpg"
+       alt="Min Seo Kim portrait">
+
+          <p>
+            Hello! My name is <b><b>Min Seo Kim</b></b>, and I'm a <b><b>mechanical engineer</b></b> studying at <b><b>Carnegie Mellon Univeristy</b></b> for my 
+            <b><b>Bachelor's</b></b> and <b><b>Master's degree</b></b>.
+            I enjoy bringing ideas to life by turning theoretical concepts into functional designs that I can tweak and test in real-time!
+          </p>
+
+          <p>
+            <br>
+            My current specializations are in <b><b>3D modeling</b></b>, <b><b>prototyping</b></b>, and <b><b>basic product design</b></b>. However, I'm looking to expand from my 
+            current breadth of skills and continue honing others.
+            <br>
+            <br>
+            <br>
+            Recently, I’ve been diving into <b><b>mechatronics</b></b> — more specifically working with <b><b>microcontrollers</b></b> and <b><b>basic embedded systems</b></b>. 
+            I’m also learning more about simulation tools, particularly for <b><b>finite element analysis (FEA)</b></b>, and I’m interested in 
+            deepening my understanding of heat transfer and thermal analysis to improve my design capabilities.
+           <br>
+           <br>
+           <br>
+          Along with technical skills, I bring a lot of <b><b>enthusiasm</b></b> and <b><b>energy</b></b> to the table. I’m passionate, inquisitive, 
+           and always eager to learn new things, which helps me adapt quickly to different challenges. I’m flexible with my time, 
+           dependable in team settings, and committed to contributing wherever I’m needed. 
+           <br>
+           <br>
+           <br>
+           <b><b>Strong collaboration</b></b>, a <b><b>positive attitude</b></b>, and a <b><b>friendly, vocal presence</b></b> form the foundation of my approach to any project!
+           
+          </p>
+          </section>
+
+
+
+           <!--
+        <header>
+          <h2 class="h2 article-title">My Approach</h2>
+        </header>
+
+        
+
+
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+-->
+
+       
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+<section class="skills">
+  <h3 class="h3">
+    My Skills</h3>
+
+  <p class="timeline-text">
+    <strong class="skill-heading">Software:</strong> 
+    <br>
+    3D Modeling (SolidWorks, Fusion 360), 
+    Finite Element Analysis (ANSYS, SolidWorks Simulation), 
+    MATLAB, C, Microsoft Office, Arduino
+  </p>
+
+
+  <p class="timeline-text">
+    <strong class="skill-heading">
+    <br>  
+      Hardware:</strong> 
+    <br>
+    Embedded Systems, Product Development, Rapid Prototyping, Machining, Failure Analysis, Soldering, 3-D Printing, Laser Cutting
+    <br>
+     
+    <br>
+     
+    <br>
+  </p>
+</section>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+  <div class="timeline-row">
+    <h4 class="h4 timeline-item-title">Carnegie Mellon University</h4>
+    <span class="timeline-location">Pittsburgh, PA</span>
+  </div>
+
+
+  <div class="timeline-row">
+    <p class="timeline-degree"><em>Master of Science in Mechanical Engineering</em></p>
+    <span class="timeline-date">Aug 2026 — Dec 2026</span>
+  </div>
+
+  <p class="timeline-text">
+    GPA: N/A
+    <br><br>
+  </p>
+  <p class="timeline-degree"><em>Relevant Coursework: </em></p>
+  <p class="timeline-text">
+    Advanced Mechatronic Design, Introduction to CAD/CAE Tools
+    <br>
+  </p>
+</li>
+
+
+
+<li class="timeline-item">
+
+  <div class="timeline-row">
+    <h4 class="h4 timeline-item-title">Carnegie Mellon University</h4>
+    <span class="timeline-location">Pittsburgh, PA</span>
+  </div>
+
+
+  <div class="timeline-row">
+    <p class="timeline-degree"><em>Bachelor of Science in Mechanical Engineering</em></p>
+    <span class="timeline-date">Aug 2022 — May 2026</span>
+  </div>
+
+  <p class="timeline-text">
+    GPA: 3.71/4.0
+    <br><br>
+  </p>
+  <p class="timeline-degree"><em>Relevant Coursework: </em></p>
+  <p class="timeline-text">
+    3D Design and Statics, Dynamic Systems and Controls, Heat Transfer, Dynamics, Thermodynamics, 
+    Mechanical Design: Methods and Applications, Fluid Mechanics, Differential Equations, Electronics Sensing and Actuation,
+    Physics: Electricity and Magnetism, Linear Algebra and Vector Calculus, Engineering Statistics
+  </p>
+</li>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+  <div class="timeline-row">
+    <h4 class="h4 timeline-item-title">Archbishop Mitty High School</h4>
+    <span class="timeline-location">San Jose, CA</span>
+  </div>
+
+
+  <div class="timeline-row">
+    <p class="timeline-degree"><em>High School Degree</em></p>
+    <span class="timeline-date">Aug 2018 — May 2022</span>
+  </div>
+
+  <p class="timeline-text">
+    GPA: 4.47/4.0
+  </p>
+</li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Research Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+           <li class="timeline-item">
+
+  <div class="timeline-row">
+    <h4 class="h4 timeline-item-title">MetaMobility Lab at Carnegie Mellon University</h4>
+    <span class="timeline-location">Pittsburgh, PA</span>
+  </div>
+
+
+  <div class="timeline-row">
+    <p class="timeline-degree"><em>Knee Exoskeleton - Undergraduate Research Assistant </em></p>
+    <span class="timeline-date">May 2025 — Present</span>
+  </div>
+  <p class="timeline-text">
+    •	Lead hardware design within a 5-person team to develop a lightweight knee exoskeleton to assist stroke patient recovery
+  <br>
+•	Performed iterative prototyping to develop an exoskeleton capable of delivering up to 20 Nm of torque to the knee joint
+<br>
+•	Designed orthotic cuffs and custom BOA ratcheting straps using SOLIDWORKS to prevent hardware shifting during gait and improving 
+torque transfer to knee joint by 10%
+<br>
+•	Performed literature review to evaluate existing models, identify design trends, and pinpoint areas of improvement
+<br>
+•	Delivered technical presentations to lab peers, justifying design decisions based on test results and integrating feedback to refine 
+prototype features that align with biomechanical performance goals
+  </p>
+</li>
+           <li class="timeline-item">
+
+  <div class="timeline-row">
+    <h4 class="h4 timeline-item-title">CERLAB at Carnegie Mellon University</h4>
+    <span class="timeline-location">Pittsburgh, PA</span>
+  </div>
+
+
+  <div class="timeline-row">
+    <p class="timeline-degree"><em>Golf Simulator - Undergraduate Research Assistant </em></p>
+    <span class="timeline-date">May 2024 — Aug 2024</span>
+  </div>
+  <p class="timeline-text">
+    •	Collaborated in designing mechanisms to mimic terrain simulation to lay the groundwork for future entertainment applications and 
+    research platforms requiring programmable terrain environments
+  <br>
+•	Developed a joint concept with planar freedom to enable angular displacement while maintaining fixed horizontal distance between joints, 
+compensating for lateral shifts that occur during inclination
+<br>
+•	Designed a linear ratchet mechanism using Autodesk Fusion to serve as a golf tee, providing 10cm of vertical freedom
+<br>
+•	Wired motor mechanisms by soldering and crimping electrical connections
+  </p>
+</li>
+</ol>
+</section>
+
+<section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Academic Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+           <li class="timeline-item">
+
+  <div class="timeline-row">
+    <h4 class="h4 timeline-item-  title">Automatic Door Opener</h4>
+    <span class="timeline-location">October 2024 — Dec 2024</span>
+  </div>
+
+
+  <div class="timeline-row">
+    <p class="timeline-degree"><em>Carnegie Mellon University </em></p>
+  </div>
+  <p class="timeline-text">
+  •	Assisted in the product development of an automatic door opener to improve accessibility for individuals with limited mobility
+  <br>
+•	Conducted market analysis to evaluate existing door opener solutions, identifying installation complexity and high cost as key 
+design constraints, informing our project’s design objectives and solution development
+<br>
+•	Performed hand calculations to develop a door-mounted motor mechanism that applies 50N of downward force for traction
+ and delivers 2.136 Nm of torque to rotate and open the door, with a factor of safety of 3.0
+<br>
+•	Ran finite element analysis (FEA) simulations on CAD assemblies to assess stress distribution and verify factor of safety
+<br>
+•	Collaborated on technical report and design review presentation detailing the design process and demonstrating performance advantages
+ over existing commercial solutions through comparative analysis and live demonstration
+  </p>
+</li>
+
+<li class="timeline-item">
+
+  <div class="timeline-row">
+    <h4 class="h4 timeline-item-  title">Camping Chair Project</h4>
+    <span class="timeline-location">April 2024 — May 2024</span>
+  </div>
+
+
+  <div class="timeline-row">
+    <p class="timeline-degree"><em>Carnegie Mellon University </em></p>
+  </div>
+  <p class="timeline-text">
+  •	Collaborated within a 3-person team to design a camping chair satisfying 9 distinct design constraints, weighing 11.5 lbs, 
+  and supporting up to 890N (200 lbs) of force, with a manufacturing cost of $115.10
+   <br>
+•	Conducted iterative prototyping, progressing from initial drawings to low and mid-fidelity prototypes
+ <br>
+•	Performed hand calculations to evaluate bending stress in horizontal rods and axial stress in chair legs, ensuring calculated
+ values remained below allowable material limits
+  <br>
+•	Assisted in fabrication by operating a band saw to cut steel rods, and using a lathe to drill precision holes in rubber components 
+for assembly and testing
+  </p>
+</li>
+
+<li class="timeline-item">
+
+  <div class="timeline-row">
+    <h4 class="h4 timeline-item-  title">Bicycle Crank Project</h4>
+    <span class="timeline-location">Jan 2024 — March 2024</span>
+  </div>
+
+
+  <div class="timeline-row">
+    <p class="timeline-degree"><em>Carnegie Mellon University </em></p>
+  </div>
+  <p class="timeline-text">
+  •	Used hand calculations and CAD modeling to inverse-design a lightweight bicycle crank (5.2 g) intended to fail at a 
+  specified 40 N pedal load with a factor of safety near 1.0, prioritizing failure at least 1 cm from interface components
+<br>
+•	Progressed through three major design iterations — rectangular beam, hollow cylinder, and dog-bone geometry — each incorporating 
+significant geometry changes based on bending/torsional stress analysis and testing feedback
+<br>
+•	Fabricated and tested over 50+ PLA prototypes using 3D printing, optimizing for controlled ductile failure appearing as brittle 
+through iterative adjustments in geometry, wall thickness, and print orientation
+  </p>
+</li>
+
+<li class="timeline-item">
+
+  <div class="timeline-row">
+    <h4 class="h4 timeline-item-  title">Robotics Project: Air Resistance-Optimized Maze Navigation</h4>
+    <span class="timeline-location">April 2023 — May 2023</span>
+  </div>
+
+
+  <div class="timeline-row">
+    <p class="timeline-degree"><em>Carnegie Mellon University </em></p>
+  </div>
+  <p class="timeline-text">
+  •	Collaborated in a 4-person team to integrate solid mechanics, thermal-fluids, and control systems subsystems into a 
+  mobot capable of navigating a given maze-like course
+   <br>
+  •	Conducted CFD simulations in ANSYS Discovery to compare three pre-fabricated shields — cowcatcher, pyramid, and parachute — 
+  recording refine-mode drag forces of 39.4 N, 43.3 N, and 45.4 N, corresponding to drag coefficients of 1.849, 2.032, and 2.135
+   <br>
+  •	Designed and modeled a custom motor mount within SolidWorks, ensuring proper fit with servo geometry 
+   <br>
+  •	Performed hand calculations to determine several factors including: a lever torque of 0.127 N·m, lever angular velocity of 16.98 rad/s, 
+  a motor force of 1.58 N, and minimum yield stress of the motor mount material as 126.8 N/in² (to meet a factor of safety of 2.0)
+  </p>
+</li>
+
+</ol>
+</section>
+
+
+<section class="timeline">
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Knee Exo</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Door Opener</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Golf Sim</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Bike Crank</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Knee Exo</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Door Opener</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Golf sim</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Bike Crank</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+
+
+
+
+            
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="knee exo">
+  <button class="pdf-open" data-pdf="./assets/pdfs/KneeExo.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/KneeExo.jpg" alt="Knee Exoskeleton PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Knee Exoskeleton (PDF)</h3>
+    <p class="project-category">Research</p>
+  </button>
+</li>
+
+
+
+
+
+<li class="project-item active go-webdesign" data-filter-item data-target="#knee-pdf-card">
+  <button type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/KneeExoCover.jpg" alt="Go to Knee Exo tab" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Knee Exoskeleton</h3>
+    <p class="project-category">Research</p>
+  </button>
+</li>
+
+
+
+
+<li class="project-item active go-tab" data-filter-item
+    data-go="door opener" data-target="#ada-anchor">
+
+  <button type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ADACover.jpeg" alt="Automatic Door Opener" loading="lazy">
+    </figure>
+    <h3 class="project-title">Automated Door Opener</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+
+
+
+<li class="project-item exclude-all" data-filter-item data-category="knee exo">
+
+  <button class="video-open"
+          data-video="./assets/images/KneeDemo.mp4"
+          data-poster="./assets/images/knee-demo-poster.jpg"
+          type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-circle-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/KneeDemoCover.jpg" alt="Knee Exo video demo" loading="lazy">
+    </figure>
+    <h3 class="project-title">Ver 1.1 — Video Demo (no actuation)</h3>
+    <p class="project-category">Research</p>
+  </button>
+</li>
+
+
+<li class="project-item exclude-all" data-filter-item data-category="knee exo">
+
+  <button class="video-open"
+          data-video="./assets/images/TBD"
+          data-poster="./assets/images/knee-demo-poster.jpg"
+          type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-circle-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/TBD" alt="Knee Exo video demo" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Latest Ver — Video Demo (actuation) [TO BE FINISHED/UPLOADED]</h3>
+    <p class="project-category">Research</p>
+  </button>
+</li>
+
+
+
+
+            <li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="door opener">
+  <button class="pdf-open" data-pdf="./assets/pdfs/ADADoorOpener.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ADADoorOpener.jpg" alt="Knee Exoskeleton PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Automated Door Opener (PDF)</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+<li class="project-item exclude-all" data-filter-item data-category="door opener">
+
+  <button class="video-open"
+          data-video="./assets/images/ADADemo.MP4"
+          type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-circle-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ADADemoCover.jpg" alt="Automatic Door Opener video demo" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Automated Door Opener - Video Demo </h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="door opener">
+  <button class="pdf-open" data-pdf="./assets/pdfs/ADAReport.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ADAReport.jpg" alt="Door Opener Final Report" loading="lazy">
+    </figure>
+    <h3 class="project-title">Design Report</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+
+
+
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="door opener">
+  <button class="pdf-open" data-pdf="./assets/pdfs/ADAPresentation.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/ADAPresCover.jpg" alt="ADA Presentation PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Design Presentation</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+
+
+
+ <li class="project-item active go-tab" data-filter-item data-go="Golf Sim" data-target="#golf-anchor">
+  <button type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>  
+      </div>
+      <img src="./assets/images/GolfSimCover.jpg" alt="Go to Golf Sim tab" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Golf Simulator</h3>
+    <p class="project-category">Research</p>
+  </button> 
+</li>
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="golf sim">
+  <button class="pdf-open" data-pdf="./assets/pdfs/GolfSim.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/GolfSim.jpg" alt="Golf Sim PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Golf Simulator (PDF)</h3>
+    <p class="project-category">Research</p>
+  </button>
+</li>
+
+
+
+<li class="project-item exclude-all" data-filter-item data-category="golf sim">
+
+  <button class="video-open"
+          data-video="./assets/images/GolfSimDemo.mp4"
+          data-poster="./assets/images/rdghgfjn"
+          type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-circle-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/GolfSimDemoCover.jpeg" alt="Automatic Door Opener video demo" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Golf Simulator - Video Demo </h3>
+    <p class="project-category">Research</p>
+  </button>
+</li> 
+
+
+
+
+
+<li class="project-item exclude-all" data-filter-item data-category="golf sim">
+
+  <button class="video-open"
+          data-video="./assets/images/GolfTeeDemo.mp4"
+          data-poster="./assets/images/rdghgfjn"
+          type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="play-circle-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/GolfTeeDemoCover.jpeg" alt="Automatic Door Opener video demo" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Golf Tee - Video Demo </h3>
+    <p class="project-category">Research</p>
+  </button>
+</li> 
+
+
+
+
+
+<li class="project-item active go-tab" data-filter-item data-go="bike crank" data-target="#bike-anchor">
+  <button type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>  
+      </div>
+      <img src="./assets/images/BikeCrankCover.jpg" alt="Go to Golf Sim tab" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Bicycle Crank</h3>
+    <p class="project-category">Project</p>
+  </button> 
+</li>
+
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="bike crank">
+  <button class="pdf-open" data-pdf="./assets/pdfs/BicycleCrank.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/BikeCrank.jpg" alt="Golf Sim PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Bicycle Crank (PDF)</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="bike crank">
+  <button class="pdf-open" data-pdf="./assets/pdfs/BikeCrankReport.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/BikeCrankReportCover.jpg" alt="Bike Crank Report" loading="lazy">
+    </figure>
+    <h3 class="project-title">Design Report</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="bike crank">
+  <button class="pdf-open" data-pdf="./assets/pdfs/BikeCrankPresentation.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/BikeCrankPresentationCover.jpg" alt="ADA Presentation PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Design Presentation</h3>
+    <p class="project-category">Project</p>
+  </button>
+</li>
+
+
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #HOBBIES
+      -->
+
+    <article class="hobbies" data-page="hobbies">
+
+  <header>
+    <h2 class="h2 article-title">Hobbies</h2>
+  </header>
+
+  <section class="blog-posts">
+
+    <ul class="blog-posts-list">
+
+      <li class="blog-post-item">
+        <a href="#">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/league.jpg" alt="League of Legends" loading="lazy">
+          </figure>
+
+          <div class="blog-content">  
+            <h3 class="h3 blog-item-title">League of Legends / TFT 🎮</h3>
+
+            <p class="blog-text">
+              I've been (unfortunately) playing League since 2021... Hardstuck low masta and singed OTP with 1.3 million mastery B) 
+              <br>
+              <br>
+              As for TFT, I started playing during set 11! Usually Plat ~ Emerald
+              <br>
+              <br>
+              P.S. Please bring back storyweaver Riot ㅠㅠ
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+       <li class="blog-post-item">
+        <a href="#">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/violin.jpg" alt="Violin" loading="lazy">
+          </figure>
+
+          <div class="blog-content">  
+            <h3 class="h3 blog-item-title">Violin 🎻</h3>
+
+            <p class="blog-text">
+
+              I picked up the violin when I was 8 years old! At first I hated it, but I grew to love my instrument as I've made a lot of 
+              close friends and core memories through my experiences in orchestras. 
+              <br>
+              <br>
+              Looking back, I guess I’m grateful my mom made me practice... haha
+
+
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+
+      <li class="blog-post-item">
+        <a href="#">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/traveling.jpg" alt="Traveling" loading="lazy">
+          </figure>
+
+          <div class="blog-content">  
+            <h3 class="h3 blog-item-title">Traveling ✈️</h3>
+
+            <p class="blog-text">
+              Something something apple doesn't fall far from the tree... just like my mom, I love traveling and 
+              visiting new places :>
+              <br>
+              <br>
+              Obviously, I love going to Korea more than anything! Any time spent with my relatives is a good time spent ^^
+              <br>
+              <br>
+              <small>(Peep my cute baby nephew)</small>
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+ <li class="blog-post-item">
+        <a href="#">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/hiking.jpg" alt="Hiking" loading="lazy">
+          </figure>
+
+          <div class="blog-content">  
+            <h3 class="h3 blog-item-title">Hiking 🥾</h3>
+
+            <p class="blog-text">
+
+              I love going on walks in general, but being out in nature with the trees, animals, and beautiful scenery is a nice bonus :)
+              <br>
+              <br>
+              Kinda unrelated but I love animals, the Orca is my favorite!
+              <br>
+              <br>
+              (For anyone that's curious, this picture was taken in Yosemite)
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+        <a href="#">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/cooking.jpg" alt="Cooking !" loading="lazy">
+          </figure>
+
+          <div class="blog-content">  
+            <h3 class="h3 blog-item-title">Cooking 🍳</h3>
+
+           <p class="blog-text">
+              I enjoy cooking in my free time :> Spaghetti is my favorite dish to make, and I love trying new 
+              recipes when I get the chance hehe.
+              <br>
+              <br>
+              Does anybody want to do my dishes?
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+<li class="blog-post-item">
+        <a href="#">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/karaoke.jpg" alt="Karaoke" loading="lazy">
+          </figure>
+
+          <div class="blog-content">  
+            <h3 class="h3 blog-item-title">Karaoke 🎤</h3>
+
+            <p class="blog-text">
+              I'm absolutely awful at it, but I love singing hahaha. I listen to nearly every genre of music so I don't have a problem
+              with choice of song :) 
+              <br>
+              <br>
+              As is my philosophy with most other things, the more the merrier! 
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+        <a href="#">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/manga.jpg" alt="friends" loading="lazy">
+          </figure>
+
+          <div class="blog-content">  
+            <h3 class="h3 blog-item-title">Reading manga 📖</h3>
+
+            <p class="blog-text">
+              I've been watching anime since I was in 1st grade, but transitioned to reading manga in highschool.
+              <br>
+              <br>
+              My favorite genre is shounen, and my all time favorite series are One Punch Man, One Piece, and Dragon Ball Z!
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+
+      <li class="blog-post-item">
+        <a href="#">
+
+          <figure class="blog-banner-box">
+            <img src="./assets/images/friends.jpg" alt="friends" loading="lazy">
+          </figure>
+
+          <div class="blog-content">  
+            <h3 class="h3 blog-item-title">Just goofin' around :P</h3>
+
+            <p class="blog-text">
+
+              I don't have as many as I'd like, but the friends I do have I hold near and dear to my heart <3 
+              <br>
+              <br>
+              I love doing anything with them, but we never plan 
+              anything. We just pick each other up and figure it out along the way ^^
+            </p>
+
+          </div>
+
+        </a>
+      </li>
+     
+    </ul>
+
+  </section>
+
+</article>
+
+
+  
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="address" data-page="address">
+
+        <header>
+          <h2 class="h2 article-title">Address</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203132.8105803049!2d-121.9809213516089!3d37.29631490662188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcae48af93ff5%3A0xb99d8c0aca9f717b!2sSan%20Jose%2C%20CA!5e0!3m2!1sen!2sus!4v1763012687094!5m2!1sen!2sus"
+  width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+          </figure>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+<div id="pdf-modal" class="pdf-modal" hidden>
+  <div class="pdf-overlay" data-pdf-close></div>
+  <div class="pdf-dialog">
+    <button class="pdf-close" aria-label="Close" data-pdf-close>&times;</button>
+    <iframe id="pdf-frame" title="PDF preview" loading="lazy"></iframe>
+    <div class="pdf-actions">
+    </div>
+  </div>
+</div>
+
+
+<!-- === Video Modal === -->
+<div id="video-modal" class="pdf-modal" hidden>
+  <div class="pdf-overlay" data-close></div>
+
+  <div class="pdf-dialog">
+    <button class="pdf-close" aria-label="Close" data-close>&times;</button>
+    <video id="video-player" class="modal-video" playsinline controls></video>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
