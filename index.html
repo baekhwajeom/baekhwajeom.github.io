@@ -672,11 +672,14 @@ through iterative adjustments in geometry, wall thickness, and print orientation
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
+            
+            <li class="filter-item">
+              <button data-filter-btn>Resistor Sorter</button>
+            </li>
 
             <li class="filter-item">
               <button data-filter-btn>Knee Exo</button>
             </li>
-
 
             <li class="filter-item">
               <button data-filter-btn>Bawp It</button>
@@ -718,6 +721,11 @@ through iterative adjustments in geometry, wall thickness, and print orientation
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
+              
+              <li class="select-item">
+                <button data-select-item>Resistor Sorter</button>
+              </li>
+
 
               <li class="select-item">
                 <button data-select-item>Knee Exo</button>
@@ -751,24 +759,18 @@ through iterative adjustments in geometry, wall thickness, and print orientation
 
 
 
-
-
-            
-<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="knee exo">
-  <button class="pdf-open" data-pdf="./assets/pdfs/KneeExo.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+<li class="project-item active go-webdesign" data-filter-item data-target="#resistor-pdf-card">
+  <button type="button" style="all: unset; cursor: pointer; display: block;">
     <figure class="project-img">
       <div class="project-item-icon-box">
         <ion-icon name="eye-outline"></ion-icon>
       </div>
-      <img src="./assets/images/KneeExo.jpg" alt="Knee Exoskeleton PDF" loading="lazy">
-    </figure>
-    <h3 class="project-title">Knee Exoskeleton (PDF)</h3>
-    <p class="project-category">Research</p>
+      <img src="./assets/images/AutomatedResistorSorterCover.png" alt="Go to Resistor Sorter tab" loading="lazy">
+    </figure> 
+    <h3 class="project-title">Automated Resistor Sorter</h3>
+    <p class="project-category">Project</p>
   </button>
 </li>
-
-
-
 
 
 <li class="project-item active go-webdesign" data-filter-item data-target="#knee-pdf-card">
@@ -780,6 +782,22 @@ through iterative adjustments in geometry, wall thickness, and print orientation
       <img src="./assets/images/KneeExoCover.jpg" alt="Go to Knee Exo tab" loading="lazy">
     </figure> 
     <h3 class="project-title">Knee Exoskeleton</h3>
+    <p class="project-category">Research</p>
+  </button>
+</li>
+
+            
+
+
+<li id="knee-pdf-card" class="project-item exclude-all" data-filter-item data-category="knee exo">
+  <button class="pdf-open" data-pdf="./assets/pdfs/KneeExo.pdf" type="button" style="all: unset; cursor: pointer; display: block;">
+    <figure class="project-img">
+      <div class="project-item-icon-box">
+        <ion-icon name="eye-outline"></ion-icon>
+      </div>
+      <img src="./assets/images/KneeExo.jpg" alt="Knee Exoskeleton PDF" loading="lazy">
+    </figure>
+    <h3 class="project-title">Knee Exoskeleton (PDF)</h3>
     <p class="project-category">Research</p>
   </button>
 </li>
